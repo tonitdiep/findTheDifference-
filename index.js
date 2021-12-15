@@ -7,6 +7,16 @@
  * @return {character}
  */
 var findTheDifference = function(s, t) {
+    // let s = '', 
+    //     let t = s.length + 1;
+    //     console.log('s:', s, 't:', t)
+    // // Math.random()?
+    const sStr = s.split('').sort().join('')
+    const tStr = t.split('').sort().join('')
+     for (let i = 0; i < t.length; i++) {
+      if (sStr[i] !== tStr[i]) return tStr[i];
+       
+  }
 
 };
 
